@@ -1239,4 +1239,258 @@ export const moreAbout = [
       </>
     ),
   },
+  {
+    id: "32",
+    title: "Informática Básica - Windows e Pacote Office",
+    benefits: (
+      <>
+        Aprenda a utilizar o sistema operacional Windows, as ferramentas relacionadas ao
+        pacote Office (Word e Excel) e a navegação na internet, desenvolvendo autonomia digital
+        essencial para o dia a dia, estudos e mercado de trabalho.
+        <br />
+        <ul>
+          <li>✓Navega e utiliza as funcionalidades do sistema operacional Windows</li>
+          <li>✓Cria e formata documentos de texto utilizando o Microsoft Word</li>
+          <li>✓Elabora planilhas e realiza cálculos básicos utilizando o Microsoft Excel</li>
+          <li>✓Navega na internet com segurança para pesquisas e comunicação</li>
+        </ul>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          <u>Público-alvo:</u> Pessoas interessadas em adquirir conhecimentos fundamentais de informática <br />
+          <u>Carga horária:</u> 40 horas
+          <br />
+          <u>Pré-requisitos:</u> Conhecimentos básicos de informática
+          <br />
+          <u>Parceiros:</u> SMCTI e Senac
+          <br />
+          <u>Período:</u> 16/11/2026 a 30/11/2026, de segunda a quinta-feira, das 13h30 às 17h30
+          <br />
+          <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
+          <br />
+          <u>Conteúdo:</u>
+        </p>
+
+        <ul className="list-disc list-inside px-4">
+          <li>Sistema Operacional Windows: área de trabalho, pastas e configurações</li>
+          <li>Microsoft Word: criação, edição e formatação de documentos</li>
+          <li>Microsoft Excel: planilhas, fórmulas simples e organização de dados</li>
+          <li>Navegação na internet, pesquisas e boas práticas de segurança digital</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "33",
+    title: "Aplicativos Básicos em Informática: MS Office",
+    benefits: (
+      <>
+        Utilize os recursos do Microsoft Office com qualidade e assertividade, otimizando tarefas
+        diárias de escritório, estudos e produção de documentos no ambiente de trabalho.
+        <br />
+        <ul>
+          <li>✓Domina as ferramentas essenciais do pacote Microsoft Office</li>
+          <li>✓Ganha eficiência na edição e formatação de documentos e planilhas</li>
+          <li>✓Desenvolve autonomia para soluções práticas no ambiente profissional</li>
+        </ul>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          <u>Público-alvo:</u> Pessoas que desejam aprimorar o uso de ferramentas de escritório <br />
+          <u>Carga horária:</u> 15 horas
+          <br />
+          <u>Pré-requisitos:</u> Conhecimentos básicos de informática
+          <br />
+          <u>Parceiros:</u> SMCTI e Senac
+          <br />
+          <u>Período:</u> 02/12/2026 a 10/12/2026, às quartas, quintas e sextas-feiras, das 09h00 às 12h00
+          <br />
+          <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
+          <br />
+          <u>Conteúdo:</u>
+        </p>
+
+        <ul className="list-disc list-inside px-4">
+          <li>Recursos fundamentais do Microsoft Word</li>
+          <li>Operações e organização de planilhas no Microsoft Excel</li>
+          <li>Boas práticas e rotinas com ferramentas de produtividade Office</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "34",
+    title: "Impressão de Objetos em 3D",
+    benefits: (
+      <>
+        Aplique as técnicas necessárias para a preparação de modelos e para a impressão de
+        objetos em 3D, compreendendo todo o processo desde o projeto tridimensional até a
+        fabricação do objeto físico.
+        <br />
+        <ul>
+          <li>✓Compreende o funcionamento e os conceitos da impressão 3D</li>
+          <li>✓Aprende a preparar e fatiar modelos tridimensionais em softwares específicos</li>
+          <li>✓Calibra e opera impressoras 3D com segurança</li>
+          <li>✓Explora aplicações práticas na prototipagem rápida</li>
+        </ul>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          <u>Público-alvo:</u> Estudantes, entusiastas de tecnologia, makers e profissionais de criação <br />
+          <u>Carga horária:</u> 15 horas
+          <br />
+          <u>Pré-requisitos:</u> Conhecimentos básicos de informática
+          <br />
+          <u>Parceiros:</u> SMCTI e Senac
+          <br />
+          <u>Período:</u> 07/12/2026 a 11/12/2026, de segunda a sexta-feira, das 13h30 às 16h30
+          <br />
+          <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
+          <br />
+          <u>Conteúdo:</u>
+        </p>
+
+        <ul className="list-disc list-inside px-4">
+          <li>Introdução às tecnologias de impressão 3D e manufatura aditiva</li>
+          <li>Softwares de fatiamento e preparação de arquivos (STL/OBJ)</li>
+          <li>Ajustes de parâmetros (temperatura, suportes, preenchimento e resolução)</li>
+          <li>Operação e manutenção preventiva de impressoras 3D</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "35",
+    title: "Empreender com as Redes Sociais",
+    benefits: (
+      <>
+        Aprenda a usar o poder e a influência das redes sociais para alavancar suas vendas,
+        interagir com o cliente ou divulgar seu negócio de forma estratégica e profissional.
+        <br />
+        <ul>
+          <li>✓Cria estratégias de presença digital para marcas e produtos</li>
+          <li>✓Aprende a produzir conteúdo engajador para diferentes plataformas</li>
+          <li>✓Melhora a comunicação e o relacionamento direto com clientes</li>
+          <li>✓Utiliza recursos das redes sociais direcionados para vendas</li>
+        </ul>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          <u>Público-alvo:</u> Empreendedores, profissionais liberais e interessados em marketing digital <br />
+          <u>Carga horária:</u> 15 horas
+          <br />
+          <u>Pré-requisitos:</u> Conhecimentos básicos de informática e redes sociais
+          <br />
+          <u>Parceiros:</u> SMCTI e Senac
+          <br />
+          <u>Período:</u> 12/11/2026 a 26/11/2026, às terças e quintas-feiras, das 19h00 às 22h00
+          <br />
+          <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
+          <br />
+          <u>Conteúdo:</u>
+        </p>
+
+        <ul className="list-disc list-inside px-4">
+          <li>Panorama das principais redes sociais para negócios</li>
+          <li>Planejamento e criação de conteúdo para atração de clientes</li>
+          <li>Estratégias de engajamento e atendimento digital</li>
+          <li>Uso das ferramentas digitais para promoção e vendas</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "36",
+    title: "Aplicação de Inteligência Artificial para Negócios",
+    benefits: (
+      <>
+        Oportunizar aos participantes conhecimentos relacionados à aplicação da inteligência
+        artificial em empresas, capacitando para o uso prático de ferramentas modernas no
+        ambiente corporativo.
+        <br />
+        <ul>
+          <li>✓Compreende o impacto e a aplicação da IA nas empresas</li>
+          <li>✓Utiliza ferramentas de IA para otimizar rotinas de trabalho</li>
+          <li>✓Aumenta a produtividade em tarefas operacionais e estratégicas</li>
+          <li>✓Desenvolve visão de inovação e transformação digital para negócios</li>
+        </ul>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          <u>Público-alvo:</u> Empresários, gestores, estudantes e profissionais de diversas áreas <br />
+          <u>Carga horária:</u> 15 horas
+          <br />
+          <u>Pré-requisitos:</u> Idade mínima de 16 anos e 5º ano do Ensino Fundamental
+          <br />
+          <u>Parceiros:</u> SMCTI e Senac
+          <br />
+          <u>Período:</u> 02/12/2026 a 10/12/2026, às terças, quartas e quintas-feiras, das 19h00 às 22h00
+          <br />
+          <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
+          <br />
+          <u>Conteúdo:</u>
+        </p>
+
+        <ul className="list-disc list-inside px-4">
+          <li>Conceitos fundamentais de Inteligência Artificial para empresas</li>
+          <li>Aplicações práticas em marketing, vendas, atendimento e processos</li>
+          <li>Ferramentas de IA generativa no dia a dia corporativo</li>
+          <li>Oportunidades, ética e tendências de IA no mercado</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "37",
+    title: "MS Excel: Operações Essenciais",
+    benefits: (
+      <>
+        Capacitar o participante a realizar as operações essenciais de planilha utilizando o
+        Microsoft Excel, desenvolvendo habilidades fundamentais para organização e análise
+        de dados.
+        <br />
+        <ul>
+          <li>✓Cria e formata planilhas eletrônicas com visual profissional</li>
+          <li>✓Aplica fórmulas e funções essenciais para cálculos automáticos</li>
+          <li>✓Gera gráficos para interpretação e visualização de dados</li>
+          <li>✓Organiza e classifica tabelas de forma prática e ágil</li>
+        </ul>
+      </>
+    ),
+    description: (
+      <>
+        <p>
+          <u>Público-alvo:</u> Estudantes e profissionais que necessitam utilizar o Excel no dia a dia <br />
+          <u>Carga horária:</u> 20 horas
+          <br />
+          <u>Pré-requisitos:</u> Conhecimentos básicos de informática
+          <br />
+          <u>Parceiros:</u> SMCTI e Senac
+          <br />
+          <u>Período:</u> 17/11/2026 a 26/11/2026, às terças, quartas e quintas-feiras, das 09h00 às 12h00
+          <br />
+          <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
+          <br />
+          <u>Conteúdo:</u>
+        </p>
+
+        <ul className="list-disc list-inside px-4">
+          <li>Interface do Microsoft Excel e navegação em pastas de trabalho</li>
+          <li>Inserção, edição e formatação de dados e células</li>
+          <li>Fórmulas básicas e funções essenciais (SOMA, MÉDIA, CONT.SE)</li>
+          <li>Criação e formatação de gráficos para apresentação de informações</li>
+        </ul>
+      </>
+    ),
+  },
 ];
