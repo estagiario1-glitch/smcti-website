@@ -8,6 +8,7 @@ import {
   Building2Icon,
   CalendarDays,
   CheckCircle2,
+  Clock,
   Code2,
   Cpu,
   ExternalLink,
@@ -48,6 +49,7 @@ type CourseBase = {
   duration: string;
   isNotOpen: boolean;
   link: string;
+  workload?: string | null;
 };
 
 const courseCategories = [
@@ -89,7 +91,26 @@ const onlineCourseStartDate = "01/07/2026";
 const onlineCourseEndDate = "30/11/2026";
 const netAcadPartners = "SMCTI, UTFPR e CISCO";
 
-const featuredCourses = [
+type FeaturedCourse = {
+  id: string;
+  image: string;
+  title: string;
+  description: string;
+  partners: string;
+  link: string;
+  date: string;
+  enrollmentDate: string;
+  startDate: string;
+  availableUntilDate?: string;
+  category: CourseCategory;
+  modality: CourseModality;
+  highlight: string;
+  location?: string;
+  passphrase?: string;
+  carga?: string | null;
+};
+
+const featuredCourses: FeaturedCourse[] = [
   {
     id: "1",
     image: "/assets/images/cursos/defesa_rede.png",
@@ -101,9 +122,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "27 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -117,9 +139,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "6 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -133,9 +156,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "6 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -149,9 +173,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "6 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -165,9 +190,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "30 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Programação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Programação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -181,9 +207,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "6 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -197,9 +224,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "6 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -213,9 +241,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "20 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -229,9 +258,10 @@ const featuredCourses = [
     date: onlineCoursePeriod,
     enrollmentDate: "Matrículas abertas",
     startDate: onlineCourseStartDate,
+    carga: "6 horas",
     availableUntilDate: onlineCourseEndDate,
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Online" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Online",
     highlight: "Cisco NetAcad",
   },
   {
@@ -245,8 +275,8 @@ const featuredCourses = [
     date: "16/06/2026 a 12/11/2026",
     enrollmentDate: "Matrículas abertas",
     startDate: "16/06/2026",
-    category: "Sistemas" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Sistemas",
+    modality: "Presencial",
     highlight: "Formação profissional",
   },
   {
@@ -259,8 +289,8 @@ const featuredCourses = [
     date: "14/07/2026 a 17/09/2026",
     enrollmentDate: "Matrículas abertas",
     startDate: "14/07/2026",
-    category: "Programação" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Programação",
+    modality: "Presencial",
     highlight: "Formação profissional",
     passphrase: ""
   },
@@ -276,8 +306,8 @@ const featuredCourses = [
     date: "22/09/2026 a 29/10/2026",
     enrollmentDate: "Matrículas abertas",
     startDate: "22/09/2026",
-    category: "Desenvolvimento Web" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Desenvolvimento Web",
+    modality: "Presencial",
     highlight: "Criação de websites",
     passphrase: "",
   },
@@ -293,8 +323,8 @@ const featuredCourses = [
     date: "15/08/2026 a 19/09/2026",
     enrollmentDate: "Matrículas abertas",
     startDate: "15/08/2026",
-    category: "Tecnologia e Inovação" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Presencial",
     highlight: "Inteligência Artificial",
     passphrase: "",
   },
@@ -310,8 +340,8 @@ const featuredCourses = [
     date: "12/09/2026 a 03/10/2026",
     enrollmentDate: "Matrículas abertas",
     startDate: "12/09/2026",
-    category: "Robótica" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Robótica",
+    modality: "Presencial",
     highlight: "Robótica",
     passphrase: "",
   },
@@ -327,139 +357,145 @@ const featuredCourses = [
     date: "12/09/2026 a 24/10/2026",
     enrollmentDate: "Matrículas abertas",
     startDate: "12/09/2026",
-    category: "Programação" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Programação",
+    modality: "Presencial",
     highlight: "Programação",
     passphrase: "",
   },
   {
     id: "31",
     image: "/assets/images/cursos/banner_senac_java.jpg",
-    title: "Programação em Java",
+    title: "Programação em Java - Gratuito",
     description:
-      "Desenvolva programas orientados a objetos na linguagem Java. Aprenda a configurar o ambiente de desenvolvimento, aplicar os conceitos essenciais da orientação a objetos, testar códigos e tratar erros utilizando as melhores práticas do mercado.",
+      " Curso gratuito para desenvolvimento de programas orientados a objetos na linguagem Java. Aprenda a configurar o ambiente de desenvolvimento, aplicar os conceitos essenciais da orientação a objetos, testar códigos e tratar erros utilizando as melhores práticas do mercado.",
     partners: "SMCTI e Senac",
     location: "Parque Tecnológico de Pato Branco",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600135",
-    date: "18:30 às 22:30",
+    date: "12/11/2026 a 23/02/2027",
+    carga: "36 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "12/11/2026",
-    category: "Programação" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Programação",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
   {
     id: "32",
     image: "/assets/images/cursos/informatica_basica_windows_e_pacote_office.jpg",
-    title: "Informática Básica - Windows e Pacote Office",
+    title: "Informática Básica - Windows e Pacote Office - Gratuito",
     description:
-      "Aprenda a utilizar o sistema operacional Windows, as ferramentas relacionadas ao pacote Office (Word e Excel) e a navegação na internet.",
+      "Curso gratuito para Aprender a utilizar o sistema operacional Windows, as ferramentas relacionadas ao pacote Office (Word e Excel) e a navegação na internet.",
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600188",
-    date: "13h30 às 17h30",
+    date: "16/11/2026 a 30/11/2026",
+    carga: "40 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "16/11/2026",
-    category: "Informática" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Outros cursos",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
   {
     id: "33",
     image: "/assets/images/cursos/aplicativos_basicos_em_informatica_ms_office_340757286.jpg",
-    title: "Aplicativos Básicos em Informática: MS Office",
+    title: "Aplicativos Básicos em Informática: MS Office - Gratuito",
     description:
-      "Utilize os recursos do Microsoft Office com qualidade e assertividade.",
+      "Curso gratuito para utilizar os recursos do Microsoft Office com qualidade e assertividade.",
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600195",
-    date: "09h00 às 12h00",
+    date: "02/12/2026 a 10/12/2026",
+    carga: "15 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "02/12/2026",
-    category: "Informática" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Outros cursos",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
   {
     id: "34",
     image: "/assets/images/cursos/modelagem_3D.jpg",
-    title: "Impressão de Objetos em 3D",
+    title: "Impressão de Objetos em 3D - Gratuito",
     description:
-      "Aplique as técnicas necessárias para a preparação de modelos e para a impressão de objetos em 3D.",
+      "Curso gratuito para aplicar as técnicas necessárias para a preparação de modelos e para a impressão de objetos em 3D.",
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600194",
-    date: "13h30 às 16h30",
+    date: "07/12/2026 a 11/12/2026",
+    carga: "15 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "07/12/2026",
-    category: "Tecnologia" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Impressão 3D",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
   {
     id: "35",
     image: "/assets/images/cursos/empreender_com_as_redes_sociais.jpg",
-    title: "Empreender com as Redes Sociais",
+    title: "Empreender com as Redes Sociais - Gratuito",
     description:
-      "Aprenda a usar o poder e a influência das redes sociais para alavancar suas vendas, interagir com o cliente ou divulgar seu negócio.",
+      "Curso gratuito para aprender a usar o poder e a influência das redes sociais para alavancar suas vendas, interagir com o cliente ou divulgar seu negócio.",
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600190",
-    date: "19h00 às 22h00",
+    date: "12/11/2026 a 26/11/2026",
+    carga: "15 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "12/11/2026",
-    category: "Negócios" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
   {
     id: "36",
     image: "/assets/images/cursos/aplicacao_de_inteligencia_artificial_para_negocios_AdobeStock.jpg",
-    title: "Aplicação de Inteligência Artificial para Negócios",
+    title: "Aplicação de Inteligência Artificial para Negócios - Gratuito",
     description:
-      "Oportunizar aos participantes conhecimentos relacionados a aplicação da inteligência artificial em empresas.",
+      "Curso gratuito para disponibilizar oportunidades aos participantes conhecimentos relacionados a aplicação da inteligência artificial em empresas.",
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600187",
-    date: "19h00 às 22h00",
+    date: "02/12/2026 a 10/12/2026",
+    carga: "15 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "02/12/2026",
-    category: "Inteligência Artificial" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Tecnologia e Inovação",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
   {
     id: "37",
     image: "/assets/images/cursos/ms_excel_operacoes_essenciais.jpg",
-    title: "MS Excel: Operações Essenciais",
+    title: "MS Excel: Operações Essenciais - Gratuito",
     description:
-      "Capacitar o participante a realizar as operações essenciais de planilha utilizando o Microsoft Excel.",
+      "Curso gratuito para capacitar o participante a realizar as operações essenciais de planilha utilizando o Microsoft Excel.",
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600189",
-    date: "09h00 às 12h00",
+    date: "17/11/2026 a 26/11/2026",
+    carga: "20 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "17/11/2026",
-    category: "Informática" as CourseCategory,
-    modality: "Presencial" as CourseModality,
+    category: "Outros cursos",
+    modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
   },
 ];
-
-type FeaturedCourse = (typeof featuredCourses)[number];
 
 type ListedCourse = CourseBase & {
   category: CourseCategory;
   modality: CourseModality;
   durationLabel?: string;
   statusLabel?: string;
+  carga?: string | null;
 };
 
 const getSaoPauloTodayValue = () => {
@@ -523,6 +559,7 @@ const mapStartedFeaturedCourse = (course: FeaturedCourse): ListedCourse => ({
   category: course.category,
   modality: course.modality,
   statusLabel: "Turma já iniciada",
+  carga: course.carga,
 });
 
 const getCourseCategory = (course: Pick<CourseBase, "title" | "image">): CourseCategory => {
@@ -592,12 +629,6 @@ const getModalityPriority = (modality: CourseModality) => {
 
   return 2;
 };
-
-const sortCoursesByModality = <T extends { modality: CourseModality }>(courses: T[]) =>
-  [...courses].sort(
-    (currentCourse, nextCourse) =>
-      getModalityPriority(currentCourse.modality) - getModalityPriority(nextCourse.modality)
-  );
 
 const sectionHeadingStyles = "max-w-3xl space-y-3";
 
@@ -695,6 +726,12 @@ const FeaturedCourseCard = ({ course }: { course: FeaturedCourse }) => {
             <CalendarDays className="h-4 w-4" />
             Período: {course.date}
           </span>
+          {course.carga && (
+            <span className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2 text-xs font-bold text-slate-700">
+              <Clock className="h-4 w-4" />
+              Carga horária: {course.carga}
+            </span>
+          )}
           <span className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-2 text-xs font-bold text-slate-700">
             <UsersRound className="h-4 w-4" />
             Parceiros: {course.partners}
@@ -773,6 +810,7 @@ const Page = () => {
           ...course,
           category: getCourseCategory(course),
           modality: getCourseModality(course),
+          workload: course.workload,
         })),
       ],
     [startedFeaturedCourses]
@@ -799,6 +837,7 @@ const Page = () => {
         ...course,
         category: getCourseCategory(course),
         modality: getCourseModality(course),
+        workload: course.workload,
       })),
     []
   );
@@ -910,10 +949,6 @@ const Page = () => {
               alt="Logo PatoTech Escola de Inovação"
               className="h-auto w-full max-w-[280px] object-contain sm:max-w-[420px]"
             />
-            {/*<div className="inline-flex items-center gap-2 rounded-lg border border-cyan-300/40 bg-white/10 px-3 py-2 text-sm font-semibold text-cyan-100">
-              <SparkIcon />
-              Cursos gratuitos e institucionais
-            </div>*/}
             <div className="space-y-4">
               <h1 className="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
                 PatoTech: cursos de tecnologia para conectar você ao futuro
@@ -930,7 +965,6 @@ const Page = () => {
                 <BookOpenCheck className="h-4 w-4" />
                 Ver cursos disponíveis
               </a>
-
             </div>
           </div>
         </div>
@@ -1040,6 +1074,7 @@ const Page = () => {
                   modality={item.modality}
                   status="ongoing"
                   statusLabel={item.statusLabel ?? "Turma já iniciada"}
+                  carga={item.workload}
                 />
               ))
             ) : (
@@ -1073,6 +1108,7 @@ const Page = () => {
                 status="unavailable"
                 statusLabel="Indisponível no momento"
                 onNotify={openNotifyModal}
+                carga={item.carga}
               />
             ))
           ) : (
@@ -1235,11 +1271,5 @@ const Page = () => {
     </div>
   );
 };
-
-const SparkIcon = () => (
-  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-cyan-300 text-cello-950" aria-hidden="true">
-    <Rocket className="h-3.5 w-3.5" />
-  </span>
-);
 
 export default Page;
