@@ -362,7 +362,7 @@ const featuredCourses: FeaturedCourse[] = [
     highlight: "Programação",
     passphrase: "",
   },
-  {
+  /*{
     id: "31",
     image: "/assets/images/cursos/banner_senac_java.jpg",
     title: "Programação em Java - Gratuito",
@@ -379,7 +379,7 @@ const featuredCourses: FeaturedCourse[] = [
     modality: "Presencial",
     highlight: "Senac",
     passphrase: "",
-  },
+  },*/
   {
     id: "32",
     image: "/assets/images/cursos/informatica_basica_windows_e_pacote_office.jpg",
