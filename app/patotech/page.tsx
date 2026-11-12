@@ -531,7 +531,7 @@ const parseBrazilianDateValue = (date?: string) => {
 const hasCourseStarted = (startDate: string, todayValue: number) => {
   const startDateValue = parseBrazilianDateValue(startDate);
 
-  return startDateValue !== null && startDateValue <= todayValue;
+  return startDateValue !== null && startDateValue < todayValue;
 };
 
 const hasFeaturedCourseAvailabilityEnded = (course: FeaturedCourse, todayValue: number) => {
