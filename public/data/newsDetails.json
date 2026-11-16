@@ -1,5 +1,40 @@
 [
     {
+    "id": "patotech_abre_curso",
+    "type": "image",
+    "src": "/assets/images/news/Cursos_patotech_details.jpeg",
+    "alt": "PatoTech abre programação de cursos gratuitos",
+    "style": {
+        "display": "flex",
+        "width": "100%",
+        "height": "auto",
+        "flexShrink": 0,
+        "objectFit": "contain"
+    },
+    "title": "PatoTech abre programação de cursos gratuitos para novembro e dezembro no Parque Tecnológico",
+    "description": "",
+    "partner": "Secretaria Municipal de Ciência, Tecnologia e Inovação",
+    "datePosted": "16 de novembro de 2026",
+    "content": [
+        "A Secretaria Municipal de Ciência, Tecnologia e Inovação (SMCTI), por meio da escola de inovação PatoTech e em parceria com o Senac, divulga a nova programação de cursos presenciais para os meses de novembro e dezembro de 2026. As aulas serão realizadas na Unidade Móvel do Senac, instalada no Parque Tecnológico de Pato Branco.",
+        "A iniciativa tem como objetivo democratizar o acesso à qualificação profissional e preparar a comunidade para as demandas do mercado atual, abrangendo desde fundamentos de informática e ferramentas de escritório até inteligência artificial aplicada a negócios, vendas digitais e impressão 3D.",
+        "A parceria entre o Município de Pato Branco e o Senac reforça o compromisso em fortalecer o ecossistema local de inovação e educação tecnológica, oferecendo formação prática e acessível para estudantes, empreendedores e trabalhadores da região.",
+        ""
+    ],
+    "link": {
+    "text": "Site oficial PatoTech",
+    "url":"https://patobranco.tec.br/patotech"
+    },
+    "images": [
+        "/assets/images/news/Cursos_patotech_details.jpeg",
+        ""
+    ],
+    "gallery": [
+        "",
+        ""
+    ]
+    },
+    {
     "id": "fim_python",
     "type": "image",
     "src": "/assets/images/news/curso_python_fim.jpg",

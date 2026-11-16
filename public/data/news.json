@@ -1,4 +1,15 @@
 [
+    {
+    "id": "patotech_abre_curso",
+    "image": "/assets/images/news/Cursos_patotech_news.jpeg",
+    "title": "PatoTech abre programação de cursos gratuitos para novembro e dezembro no Parque Tecnológico",
+    "description": "A Secretaria Municipal de Ciência, Tecnologia e Inovação, por meio da PatoTech e em parceria com a Unidade Móvel do Senac, oferece oito capacitações presenciais nas áreas de informática, inteligência artificial, impressão 3D e negócios. As inscrições já estão abertas.",
+    "datePosted": "16/11/2026",
+    "partner": "Secretaria Municipal de Ciência, Tecnologia e Inovação",
+    "isNotOpen": false,
+    "link": "/noticias/patotech_abre_curso",
+    "category": "Capacitação"
+  },
   {
     "id": "fim_python",
     "image": "/assets/images/news/curso_python_fim.jpg",
