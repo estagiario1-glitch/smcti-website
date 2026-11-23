@@ -1321,7 +1321,7 @@ export const moreAbout = [
           <br />
           <u>Parceiros:</u> SMCTI e Senac
           <br />
-          <u>Período:</u> 02/12/2026 a 10/12/2026, às quartas, quintas e sextas-feiras, das 09h00 às 12h00
+          <u>Período:</u> 02/12/2026 a 11/12/2026, às quartas, quintas e sextas-feiras, das 09h00 às 12h00
           <br />
           <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
           <br />
@@ -1491,7 +1491,7 @@ export const moreAbout = [
           <br />
           <u>Parceiros:</u> SMCTI e Senac
           <br />
-          <u>Período:</u> 17/11/2026 a 26/11/2026, às terças, quartas e quintas-feiras, das 09h00 às 12h00
+          <u>Período:</u> 24/11/2026 a 08/12/2026, às terças, quartas e quintas-feiras, das 09h00 às 12h00
           <br />
           <u>Local do curso:</u> Unidade Móvel de Inovação e Inteligência Artificial - Pato Branco
           <br />
