@@ -486,7 +486,7 @@ const featuredCourses: FeaturedCourse[] = [
     partners: "SMCTI e Senac",
     location: "Unidade Móvel de Inovação e Inteligência Artificial",
     link: "https://www.pr.senac.br/cursos/?uep=9&tc=202600189",
-    date: "24/11/2026 a 08/11/2026",
+    date: "24/11/2026 a 08/12/2026",
     carga: "20 horas",
     enrollmentDate: "Matrículas abertas",
     startDate: "24/11/2026",
